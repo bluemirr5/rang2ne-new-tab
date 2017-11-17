@@ -1,27 +1,17 @@
 <template>
   <div id="app">
-    <img src="http://vuejs.org/images/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://gitter.im/vuejs/vue" target="_blank">Gitter Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vueify" target="_blank">vueify</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+    <clock></clock>
   </div>
 </template>
 
 <script>
+import clock from './component/Clock.vue'
+
 export default {
   name: 'app',
+  components: {
+      clock
+  },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
@@ -30,36 +20,19 @@ export default {
 }
 </script>
 
-<style scoped>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style>
+  body {
+    position: relative;
+    overflow: hidden;
+    font-family: 'Roboto', 'Arial', 'Malgun Gothic', '맑은 고딕', sans-serif;
+    --background: #f0efee;
+    background-position: center;
+    /* min-height: 635px; */
+    user-select: none;
+    background-image: url(https://whale-store.pstatic.net/20170919_104/15058224522968TW0x_JPEG/irene-coco-153263.jpg), url(https://whale-store.pstatic.net/20170919_104/15058224522968TW0x_JPEG/irene-coco-153263.jpg?type=a320);
+  }
 
-img {
-  width: 200px;
-  height: 200px;
-}
+  body {
 
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
+  }
 </style>
