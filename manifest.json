@@ -6,6 +6,6 @@
 
   "incognito": "split",
   "chrome_url_overrides": {
-    "newtab": "overrideTab.html"
+    "newtab": "index.html"
   }
 }
