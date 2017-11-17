@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "rang2ne new tab",
+  "description": "rang2ne new tab is chrome new tab theme",
+  "version": "1.0",
+
+  "incognito": "split",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}
