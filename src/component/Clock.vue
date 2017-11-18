@@ -6,8 +6,8 @@
         </div>
         <div id="time">
             <span>{{ hour | hour2hangul }}시</span><br />
-            <span>{{ min | minorsec2hangul }}<span v-show="(min | minorsec2hangul)">분</span></span><br />
-            <span>{{ sec | minorsec2hangul }}<span v-show="(sec | minorsec2hangul)">초</span></span><br />
+            <span>{{ min | minorsec2hangul }}분</span><br />
+            <span>{{ sec | minorsec2hangul }}초</span><br />
         </div>
         <div style="clear: both"></div>
     </div>
