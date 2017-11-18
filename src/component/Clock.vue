@@ -48,6 +48,8 @@ export default {
 </script>
 
 <style scoped>
+    @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+
     #clock {
         border:1px solid #dedede;
         width:800px;
@@ -55,6 +57,7 @@ export default {
         color: #dedede;
         font-size:80px;
         margin: 100px auto;
+        font-family: 'Jeju Gothic', serif;
     }
 
     #ampm {
@@ -63,6 +66,7 @@ export default {
         float: left;
         line-height: 300px;
         text-align:center;
+        font-family: 'Jeju Gothic', serif;
     }
 
     #time {
@@ -71,5 +75,6 @@ export default {
         margin-top: 10px;
         float: left;
         text-align:right;
+        font-family: 'Jeju Gothic', serif;
     }
 </style>
